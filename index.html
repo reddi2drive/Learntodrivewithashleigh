@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>DriveSmart Driving School</title>
+  <title>Learn to Drive with Ashleigh</title>
 
   <meta
     name="description"
-    content="Friendly, professional driving lessons with a local driving instructor."
+    content="Friendly, patient and professional driving lessons with Ashleigh. Learn to drive with confidence with lessons tailored around you."
   >
 
   <style>
@@ -68,7 +68,7 @@
     .nav {
       max-width: 1200px;
       margin: auto;
-      padding: 14px 22px;
+      padding: 10px 22px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -76,13 +76,15 @@
     }
 
     .logo {
-      font-size: 24px;
-      font-weight: 900;
-      letter-spacing: -1px;
+      display: flex;
+      align-items: center;
     }
 
-    .logo span {
-      color: var(--primary);
+    .logo img {
+      display: block;
+      width: auto;
+      height: 68px;
+      object-fit: contain;
     }
 
     .nav-links {
@@ -514,7 +516,7 @@
     }
 
     /* ================================
-       CTA / CONTACT
+       CONTACT
     ================================ */
 
     .contact {
@@ -593,7 +595,7 @@
     footer {
       background: #090909;
       color: #aaa;
-      padding: 35px 22px;
+      padding: 30px 22px;
     }
 
     .footer-inner {
@@ -606,17 +608,19 @@
     }
 
     .footer-logo {
-      color: white;
-      font-weight: 900;
-      font-size: 22px;
+      display: flex;
+      align-items: center;
     }
 
-    .footer-logo span {
-      color: var(--primary);
+    .footer-logo img {
+      display: block;
+      height: 58px;
+      width: auto;
+      object-fit: contain;
     }
 
     /* ================================
-       WHATSAPP BUTTON
+       WHATSAPP / CONTACT BUTTON
     ================================ */
 
     .whatsapp {
@@ -644,6 +648,10 @@
 
       .nav-links a:not(.nav-cta) {
         display: none;
+      }
+
+      .logo img {
+        height: 58px;
       }
 
       .hero {
@@ -702,11 +710,11 @@
       }
 
       .nav {
-        padding: 12px 16px;
+        padding: 8px 16px;
       }
 
-      .logo {
-        font-size: 20px;
+      .logo img {
+        height: 48px;
       }
 
       .nav-cta {
@@ -746,6 +754,10 @@
         grid-template-columns: 1fr;
         gap: 0;
       }
+
+      .footer-logo img {
+        height: 48px;
+      }
     }
 
   </style>
@@ -758,7 +770,10 @@
   <div class="nav">
 
     <a href="#" class="logo">
-      Drive<span>Smart</span>
+      <img
+        src="Ashleighs Logo.png"
+        alt="Learn to Drive with Ashleigh"
+      >
     </a>
 
     <nav class="nav-links">
@@ -797,9 +812,9 @@
       </h1>
 
       <p>
-        Friendly, patient and professional driving lessons designed
-        around you. Learn at your own pace and build the skills you
-        need for life on the road.
+        Friendly, patient and professional driving lessons with Ashleigh,
+        designed around you. Learn at your own pace and build the skills
+        you need for life on the road.
       </p>
 
       <div class="hero-buttons">
@@ -845,7 +860,8 @@
 
       <p>
         Whether you're getting behind the wheel for the first time
-        or preparing for your test, we'll help you move forward.
+        or preparing for your test, Ashleigh will help you move forward
+        at a pace that works for you.
       </p>
 
     </div>
@@ -861,7 +877,7 @@
 
         <p>
           Learn clutch control, gears and all the skills required
-          to become a confident manual driver.
+          to become a safe and confident manual driver.
         </p>
 
         <a href="#contact">
@@ -873,13 +889,13 @@
 
       <div class="card">
 
-        <div class="card-icon">⚙️</div>
+        <div class="card-icon">📘</div>
 
-        <h3>Automatic Lessons</h3>
+        <h3>New Learners</h3>
 
         <p>
-          Focus on the road without worrying about clutch control
-          or changing gears.
+          Starting from the beginning? Lessons are relaxed, structured
+          and tailored around your confidence and experience.
         </p>
 
         <a href="#contact">
@@ -896,8 +912,8 @@
         <h3>Test Preparation</h3>
 
         <p>
-          Mock tests, local test routes and focused training to
-          help you feel ready for test day.
+          Mock tests, local test-route experience and focused training
+          to help you feel ready for test day.
         </p>
 
         <a href="#contact">
@@ -936,7 +952,7 @@
       <div class="about-copy">
 
         <div class="eyebrow" style="color:#111;border-color:#ddd;">
-          Your Instructor
+          Meet Ashleigh
         </div>
 
         <h2>
@@ -944,9 +960,9 @@
         </h2>
 
         <p>
-          Everyone learns differently. Lessons are structured around
-          your ability, confidence and experience rather than following
-          a one-size-fits-all approach.
+          Everyone learns differently. Ashleigh's lessons are structured
+          around your ability, confidence and experience rather than
+          following a one-size-fits-all approach.
         </p>
 
         <div class="ticks">
@@ -1255,7 +1271,7 @@
         </h2>
 
         <p>
-          Send an enquiry and we'll get back to you to discuss
+          Send Ashleigh an enquiry and she'll get back to you to discuss
           availability and your driving lesson requirements.
         </p>
 
@@ -1298,11 +1314,11 @@
           </option>
 
           <option>
-            Manual
+            Manual lessons
           </option>
 
           <option>
-            Automatic
+            Test preparation
           </option>
 
           <option>
@@ -1312,7 +1328,7 @@
         </select>
 
         <textarea
-          placeholder="Anything else you'd like us to know?"
+          placeholder="Anything else you'd like Ashleigh to know?"
         ></textarea>
 
         <button
@@ -1336,11 +1352,16 @@
   <div class="footer-inner">
 
     <div class="footer-logo">
-      Drive<span>Smart</span>
+
+      <img
+        src="Ashleighs Logo.png"
+        alt="Learn to Drive with Ashleigh"
+      >
+
     </div>
 
     <div>
-      © 2026 DriveSmart Driving School
+      © 2026 Learn to Drive with Ashleigh
     </div>
 
   </div>
@@ -1351,7 +1372,7 @@
 <a
   class="whatsapp"
   href="#contact"
-  aria-label="Contact us"
+  aria-label="Contact Ashleigh"
 >
   ☎
 </a>
