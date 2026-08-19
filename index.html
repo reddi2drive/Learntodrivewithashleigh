@@ -107,27 +107,52 @@
     ================================ */
 
     .hero {
-      min-height: 660px;
-      display: flex;
-      align-items: center;
-      background:
-        linear-gradient(
-          90deg,
-          rgba(0,0,0,0.82) 0%,
-          rgba(0,0,0,0.62) 44%,
-          rgba(0,0,0,0.12) 100%
-        ),
-        url("https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1800&q=80")
-        center/cover;
-      color: white;
-    }
+  min-height: 660px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
 
-    .hero-inner {
-      max-width: 1200px;
-      width: 100%;
-      margin: auto;
-      padding: 80px 22px;
-    }
+/* FLIPPED HERO IMAGE */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    url("https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1800&q=80")
+    center / cover no-repeat;
+
+  transform: scaleX(-1);
+  z-index: 0;
+}
+
+/* DARK GRADIENT OVER THE IMAGE */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0.82) 0%,
+    rgba(0,0,0,0.62) 44%,
+    rgba(0,0,0,0.12) 100%
+  );
+
+  z-index: 1;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 80px 22px;
+}
 
     .hero-content {
       max-width: 650px;
