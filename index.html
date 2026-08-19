@@ -687,15 +687,23 @@
       }
 
       .hero {
-        min-height: 600px;
-        background:
-          linear-gradient(
-            rgba(0,0,0,0.68),
-            rgba(0,0,0,0.72)
-          ),
-          url("https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1000&q=80")
-          center/cover;
-      }
+  min-height: 600px;
+}
+
+.hero::before {
+  background:
+    url("https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1000&q=80")
+    center / cover no-repeat;
+
+  transform: scaleX(-1);
+}
+
+.hero::after {
+  background: linear-gradient(
+    rgba(0,0,0,0.68),
+    rgba(0,0,0,0.72)
+  );
+}
 
       .hero h1 {
         letter-spacing: -2px;
@@ -1112,6 +1120,8 @@
   </div>
 
 </div>
+
+    </div>
 
 </section>
 
